@@ -1,5 +1,5 @@
 <div class="p-2 px-5 z-20 rounded-[50px] bg-white shadow-slate-50 w-full  h-[70px] flex justify-between items-center">
-    <img src="./assets/logo.png" class="w-[100px]" alt="">
+   <a href="''"><img src="./assets/logo.png" class="w-[100px] cursor-pointer" alt="landing" ></a>
 
     <ul class="flex justify-between items-center flex-row gap-5 sm:hidden max-md:hidden lg:flex">
         <li [ngClass]="{'text-black' : i == 2}" *ngFor="let menu of ['Get Started', 'Documentation', 'Price', 'About']; let i = index" class="hover:text-black mx-5 font-medium cursor-pointer text-gray-500">{{menu}}</li>

@@ -6,6 +6,14 @@ const routes: Routes = [
   {
     path: "",
     loadChildren : ()=>import("./module/auth/auth.module").then((r)=>r.AuthModule)
+  },
+  // {
+  //   path: "#",
+  //   loadChildren : ()=>import("./module/landing/landing.module").then((r)=>r.LandingModule)
+  // }
+  {
+    path: "**",
+    redirectTo: ""
   }
 ];
 
