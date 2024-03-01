@@ -1,0 +1,53 @@
+<div class="py-5 gap-5 bg-slate-100 w-full flex flex-col justify-between items-center h-[100vh]">
+    <div class="relative w-10/12">
+        <app-header></app-header>
+    </div>
+
+    <div class=" mx-auto w-[60vw] p-5 h-[594px] flex justify-center flex-col gap-5 bg-white rounded-lg shadow-slate-50">
+        <div class="flex justify-center items-center flex-row gap-1">
+            <img src="./assets/back.png" class="w-[60px]" alt="">
+            <h3 class="font-medium text-4xl">You're Back!!</h3>
+        </div>
+
+        <div class="form mx-auto w-5/12 mt-5 flex flex-col gap-5">
+            <div class="inputoverflow-hidden h-[56px] relative w-full flex justify-center items-end flex-col">
+                <svg width="20" height="20"  class="relative right-4 z-20" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00033 10.4415C3.30325 10.4415 1 10.8704 1 12.588C1 14.3057 3.28864 14.75 6.00033 14.75C8.69742 14.75 11 14.3204 11 12.6034C11 10.8864 8.71203 10.4415 6.00033 10.4415Z" stroke="#717073" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00036 7.99151C7.7703 7.99151 9.20485 6.48199 9.20485 4.62041C9.20485 2.75882 7.7703 1.25 6.00036 1.25C4.23042 1.25 2.79518 2.75882 2.79518 4.62041C2.78923 6.4757 4.21448 7.98523 5.97778 7.99151H6.00036Z" stroke="#717073" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="email" class=" rounded-[8px]  border-solid border-[blue] border-[1.95px] absolute p-5 w-full h-full" placeholder="exemplo@gmail.com">
+            </div>
+            
+            <div class="inputoverflow-hidden h-[56px] relative w-full flex justify-center items-end flex-col">
+                <svg width="20" height="20"  class="relative right-4 z-20" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00033 10.4415C3.30325 10.4415 1 10.8704 1 12.588C1 14.3057 3.28864 14.75 6.00033 14.75C8.69742 14.75 11 14.3204 11 12.6034C11 10.8864 8.71203 10.4415 6.00033 10.4415Z" stroke="#717073" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00036 7.99151C7.7703 7.99151 9.20485 6.48199 9.20485 4.62041C9.20485 2.75882 7.7703 1.25 6.00036 1.25C4.23042 1.25 2.79518 2.75882 2.79518 4.62041C2.78923 6.4757 4.21448 7.98523 5.97778 7.99151H6.00036Z" stroke="#717073" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="password" class=" rounded-[8px]  border-solid border-[blue] border-[1.95px] absolute p-5 w-full h-full" placeholder="******">
+            </div>
+
+            <div>
+                <span class="text-[10pt] p-0 cursor-pointer hover:text-[blue]" [routerLink]="'/reset'">Forgot password?</span>
+
+                <div class="flex justify-center my-5">
+                    <div class="p-3 text-white cursor-pointer bg-[blue] px-5 rounded-[5px] text-center w-5/12">
+                        Sign in
+                    </div>
+                </div>
+
+                <div class="my-5 border-b text-center">
+                    <div class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
+                        Or 
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p>Log in another way? <a href="#" class="text-[blue]">Google</a></p>
+                    <p>Not registered yet? <a href="#" [routerLink]="'/register'" class="text-[blue]"> Sign up here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <app-footer></app-footer>
+</div>
