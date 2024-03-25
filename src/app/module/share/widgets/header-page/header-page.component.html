@@ -1,0 +1,12 @@
+<div class="p-2 px-5 z-20 rounded-[50px] bg-white shadow-slate-50 w-full  h-[70px] flex justify-between items-center">
+    <a href="''"><img src="./assets/logo.png" class="w-[100px] cursor-pointer" alt="landing" ></a>
+ 
+     <ul class="flex justify-between items-center flex-row gap-1 sm:hidden max-md:hidden lg:flex">
+         <li  *ngFor="let menu of menuList; let i = index" class="hover:text-black mx-3 font-medium cursor-pointer text-[blue]">{{menu}}</li>
+     </ul>
+     
+     <div class="flex gap-2 flex-row">
+         <a href="#" class="border-[blue] text-[blue] border-[1.8px] rounded-[30px] p-2 px-3">Register</a>
+         <a href="#" class="bg-[blue] text-white rounded-[30px] p-2 px-3">Connect</a>
+     </div>
+ </div>

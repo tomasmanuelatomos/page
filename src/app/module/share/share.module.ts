@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
 import { HeaderComponent } from './widgets/header/header.component';
 import { FooterComponent } from './widgets/footer/footer.component';
+import { HeaderPageComponent } from './widgets/header-page/header-page.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
+    HeaderPageComponent
 ],
   
   imports: [
@@ -22,7 +24,8 @@ import { FooterComponent } from './widgets/footer/footer.component';
     CommonModule,
     ToastrModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderPageComponent
   ],
   providers: []
 })

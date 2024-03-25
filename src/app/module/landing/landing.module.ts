@@ -18,7 +18,7 @@ import { HomeComponent } from "./pages/home/home.component";
       CommonModule,
     ],
     providers: [],
-    exports: [CommonModule],
+    exports: [CommonModule, HomeComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
   })
   export class LandingModule { }

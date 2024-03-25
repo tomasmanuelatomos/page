@@ -4,13 +4,17 @@ import { HomeComponent } from "./pages/home/home.component";
 
 const routes: Routes = [
   {
-    path: "#",
+    path: "",
     redirectTo: "/#",
     pathMatch: "full"
   },
   {
-    path: "#",
+    path: "",
     children: [
+      {
+        path: "",
+        component: HomeComponent
+      },
       {
         path: "home",
         component: HomeComponent

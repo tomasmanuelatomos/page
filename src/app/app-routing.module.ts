@@ -4,8 +4,12 @@ import { LoginComponent } from './module/auth/page/login/login.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: "auth",
     loadChildren : ()=>import("./module/auth/auth.module").then((r)=>r.AuthModule)
+  },
+  {
+    path: "",
+    loadChildren : ()=>import("./module/landing/landing.module").then((r)=>r.LandingModule)
   },
   // {
   //   path: "#",
